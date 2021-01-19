@@ -1,0 +1,21 @@
+﻿@using BlazingOrchard.DisplayManagement.Services
+@using BlazingOrchard.DisplayManagement.Shapes
+
+@RenderFragment
+
+@code {
+
+    [Parameter]
+    public IShape Shape { get; set; } = default!;
+
+    [Inject]
+    private IShapeRenderer ShapeRenderer { get; set; } = default!;
+    
+    private RenderFragment RenderFragment { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        RenderFragment = await ShapeRenderer.RenderShapeAsync(Shape);
+    }
+
+}

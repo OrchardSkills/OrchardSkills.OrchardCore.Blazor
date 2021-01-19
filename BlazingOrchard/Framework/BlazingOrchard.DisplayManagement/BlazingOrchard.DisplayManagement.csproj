@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Fizzler.Systems.HtmlAgilityPack" Version="1.2.1" />
+        <PackageReference Include="HtmlAgilityPack" Version="1.11.28" />
+        <PackageReference Include="Humanizer.Core" Version="2.8.26" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BlazingOrchard.Abstractions\BlazingOrchard.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

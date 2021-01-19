@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BlazingOrchard.Contents.Abstractions\BlazingOrchard.Contents.Abstractions.csproj" />
+      <ProjectReference Include="..\BlazingOrchard.DisplayManagement\BlazingOrchard.DisplayManagement.csproj" />
+    </ItemGroup>
+
+</Project>

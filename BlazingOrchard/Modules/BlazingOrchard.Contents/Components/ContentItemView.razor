@@ -1,0 +1,26 @@
+﻿@using BlazingOrchard.Contents.Models
+@using BlazingOrchard.Contents.Services
+@using BlazingOrchard.Contents.Display.Services
+
+@if (Shape != null)
+{
+    <ShapeView Shape="Shape"/>
+}
+
+@code {
+    [Parameter] public ContentItem? ContentItem { get; set; }
+    [Parameter] public string? Handle { get; set; }
+    [Parameter] public string? DisplayType { get; set; }
+    [Inject] private IContentProvider ContentProvider { get; set; } = default!;
+    [Inject] private IContentDisplayManager ContentDisplayManager { get; set; } = default!;
+    private IShape? Shape { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(Handle))
+            ContentItem = await ContentProvider.GetByHandleAsync(Handle);
+
+        if (ContentItem != null)
+            Shape = await ContentDisplayManager.BuildDisplayAsync(ContentItem, DisplayType);
+    }
+}
