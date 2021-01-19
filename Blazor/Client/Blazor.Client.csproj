@@ -23,7 +23,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\BlazingOrchard\Framework\BlazingOrchard\BlazingOrchard.csproj" />
     <ProjectReference Include="..\..\BlazingOrchard\Modules\BlazingOrchard.Menu\BlazingOrchard.Menu.csproj" />
-    <ProjectReference Include="..\Shared\Blazor.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
