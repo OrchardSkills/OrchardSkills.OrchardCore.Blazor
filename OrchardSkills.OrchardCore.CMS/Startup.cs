@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OrcardSkills.OrchardCoreRazorBlazor
+namespace OrchardSkills.OrchardCore.CMS
 {
     public class Startup
     {

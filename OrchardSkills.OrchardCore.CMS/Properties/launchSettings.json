@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "OrcardSkills.OrchardCoreRazorBlazor": {
+    "OrchardSkills.OrchardCore.CMS": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OrcardSkills.OrchardCoreRazorBlazor.Pages
+namespace OrchardSkills.OrchardCore.CMS.Pages
 {
     public class IndexModel : PageModel
     {
