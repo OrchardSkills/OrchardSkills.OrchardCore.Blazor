@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrcardSkills.OrchardCoreRazorBlazor", "OrcardSkills.OrchardCoreRazorBlazor\OrcardSkills.OrchardCoreRazorBlazor.csproj", "{685F496C-8CE1-423F-909D-CC3BCE7F97CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardSkills.OrchardCore.CMS", "OrchardSkills.OrchardCore.CMS\OrchardSkills.OrchardCore.CMS.csproj", "{685F496C-8CE1-423F-909D-CC3BCE7F97CE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Server", "Blazor\Server\Blazor.Server.csproj", "{573E961D-E4CD-472E-8ACC-A5D0837ED464}"
 EndProject
