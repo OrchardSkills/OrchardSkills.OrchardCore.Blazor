@@ -6,42 +6,41 @@
 @inherits ShapeTemplate
 @attribute [Shape("Content__MainMenu")]
 
-<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Blazing Orchard</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-<ul class="nav flex-column">
-    @foreach (var menuItem in MenuItems)
-    {
-        var linkMenuItemPart = menuItem.Get<LinkMenuItemPart>(nameof(LinkMenuItemPart));
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand">Blazor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    @foreach (var menuItem in MenuItems)
+                    {
+                        var linkMenuItemPart = menuItem.Get<LinkMenuItemPart>(nameof(LinkMenuItemPart));
 
-        if (linkMenuItemPart != null)
+                        if (linkMenuItemPart != null)
+                        {
+                            var menuItemUrl = linkMenuItemPart.Url.TrimStart('~');
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="@menuItemUrl">@linkMenuItemPart.Name</a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @code {
+        private ContentItem ContentItem => (ContentItem)Model.ContentItem;
+        private IEnumerable<ContentItem> MenuItems => ContentItem.Get<MenuItemsListPart>(nameof(MenuItemsListPart))!.MenuItems;
+        private bool collapseNavMenu = true;
+        private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+        private void ToggleNavMenu()
         {
-            var menuItemUrl = linkMenuItemPart.Url.TrimStart('~');
-            var matchMode = string.IsNullOrWhiteSpace(menuItemUrl.TrimStart('/')) ? NavLinkMatch.All : NavLinkMatch.Prefix;
-            var icon = menuItem.Get<ContentPart>(menuItem.ContentType).Get<TextField>("IconClass")?.Text ?? "";
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="@menuItemUrl" Match="matchMode">
-                    <span class="@icon" aria-hidden="true"></span> @linkMenuItemPart.Name
-                </NavLink>
-            </li>
+            collapseNavMenu = !collapseNavMenu;
         }
     }
-</ul>
-</div>
-
-@code {
-    private ContentItem ContentItem => (ContentItem)Model.ContentItem;
-    private IEnumerable<ContentItem> MenuItems => ContentItem.Get<MenuItemsListPart>(nameof(MenuItemsListPart))!.MenuItems;
-    private bool collapseNavMenu = true;
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
