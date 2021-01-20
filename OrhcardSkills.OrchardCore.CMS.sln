@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardSkills.OrchardCore.CMS", "OrchardSkills.OrchardCore.CMS\OrchardSkills.OrchardCore.CMS.csproj", "{685F496C-8CE1-423F-909D-CC3BCE7F97CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Client", "Blazor\Client\Blazor.Client.csproj", "{217464D2-982F-41AB-AA92-B4D6FA087D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardSkills.OrchardCore.BlazorWASM", "OrchardSkills.OrchardCore.BlazorWASM\OrchardSkills.OrchardCore.BlazorWASM.csproj", "{217464D2-982F-41AB-AA92-B4D6FA087D49}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchardModule", "BlazingOrchardModule\BlazingOrchardModule.csproj", "{858341FD-E758-487B-A0BB-F6049761601B}"
 EndProject

@@ -4,13 +4,13 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Blazor.Client.Pages;
+using OrchardSkills.OrchardCore.BlazorWASM.Pages;
 using Microsoft.Extensions.Caching.Memory;
 using BlazingOrchard.Extensions;
 using BlazingOrchard;
 using System.Text.Encodings.Web;
 
-namespace Blazor.Client
+namespace OrchardSkills.OrchardCore.BlazorWASM
 {
     public class Program
     {
