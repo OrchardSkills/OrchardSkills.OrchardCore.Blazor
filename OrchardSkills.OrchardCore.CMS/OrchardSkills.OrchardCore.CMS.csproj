@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazingOrchard.Web\Client\BlazingOrchard.Web.Client.csproj" />
     <ProjectReference Include="..\BlazingOrchardModule\BlazingOrchardModule.csproj" />
     <ProjectReference Include="..\BlazingOrchardTheme\BlazingOrchardTheme.csproj" />
-    <ProjectReference Include="..\OrchardSkills.OrchardCore.BlazorWASM\OrchardSkills.OrchardCore.BlazorWASM.csproj" />
   </ItemGroup>
 
 </Project>

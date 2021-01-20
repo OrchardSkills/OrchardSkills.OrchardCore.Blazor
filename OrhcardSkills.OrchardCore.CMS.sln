@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardSkills.OrchardCore.CMS", "OrchardSkills.OrchardCore.CMS\OrchardSkills.OrchardCore.CMS.csproj", "{685F496C-8CE1-423F-909D-CC3BCE7F97CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardSkills.OrchardCore.BlazorWASM", "OrchardSkills.OrchardCore.BlazorWASM\OrchardSkills.OrchardCore.BlazorWASM.csproj", "{217464D2-982F-41AB-AA92-B4D6FA087D49}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchardModule", "BlazingOrchardModule\BlazingOrchardModule.csproj", "{858341FD-E758-487B-A0BB-F6049761601B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchardTheme", "BlazingOrchardTheme\BlazingOrchardTheme.csproj", "{B0748925-7C50-4B4F-9C52-ACC4A5CBD0A1}"
@@ -49,6 +47,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchard.Title", "Bla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchard.Contents.Abstractions", "BlazingOrchard\Framework\BlazingOrchard.Contents.Abstractions\BlazingOrchard.Contents.Abstractions.csproj", "{36F8C69D-807E-4067-9D85-C12CF2751194}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchard.Web.Application", "BlazingOrchard.Web.Application\BlazingOrchard.Web.Application.csproj", "{5154C2F2-6FC6-4874-9081-25641D6193E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingOrchard.Web.Client", "BlazingOrchard.Web\Client\BlazingOrchard.Web.Client.csproj", "{851E9A53-B925-46F8-9BD0-0AFF2321EAE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,10 +61,6 @@ Global
 		{685F496C-8CE1-423F-909D-CC3BCE7F97CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{685F496C-8CE1-423F-909D-CC3BCE7F97CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{685F496C-8CE1-423F-909D-CC3BCE7F97CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{217464D2-982F-41AB-AA92-B4D6FA087D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{217464D2-982F-41AB-AA92-B4D6FA087D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{217464D2-982F-41AB-AA92-B4D6FA087D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{217464D2-982F-41AB-AA92-B4D6FA087D49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{858341FD-E758-487B-A0BB-F6049761601B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{858341FD-E758-487B-A0BB-F6049761601B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{858341FD-E758-487B-A0BB-F6049761601B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -135,6 +133,14 @@ Global
 		{36F8C69D-807E-4067-9D85-C12CF2751194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36F8C69D-807E-4067-9D85-C12CF2751194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36F8C69D-807E-4067-9D85-C12CF2751194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5154C2F2-6FC6-4874-9081-25641D6193E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5154C2F2-6FC6-4874-9081-25641D6193E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5154C2F2-6FC6-4874-9081-25641D6193E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5154C2F2-6FC6-4874-9081-25641D6193E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851E9A53-B925-46F8-9BD0-0AFF2321EAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851E9A53-B925-46F8-9BD0-0AFF2321EAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851E9A53-B925-46F8-9BD0-0AFF2321EAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851E9A53-B925-46F8-9BD0-0AFF2321EAE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

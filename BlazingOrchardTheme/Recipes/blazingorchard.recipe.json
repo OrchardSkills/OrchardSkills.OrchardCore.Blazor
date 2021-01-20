@@ -1319,17 +1319,19 @@
             "SetHomepage": true
           },
           "HtmlBodyPart": {
-            "Html": "<p class=\"text-center\">Welcome to Blazing Orchard</p>"
+            "Html": "<p class=\"text-center\">Welcome to Blazor</p>"
           },
           "TitlePart": {
             "Title": "Home"
           },
           "Article": {
             "Subtitle": {
-              "Text": "Blazing Orchard"
+              "Text": "Blazor"
             },
             "Image": {
-              "Paths": []
+              "Paths": [
+                "home-bg.jpg"
+              ]
             }
           }
         },
